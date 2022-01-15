@@ -8,43 +8,7 @@ import {
 } from "react-native";
 import { convertHeight, convertWidth } from "../helpers/responsiveUiHelper";
 
-const items = [
-    {
-        title: "Nike Air Max 90",
-        brand: "Nike",
-        price: "$70",
-    },
-    {
-        title: "Nike Air Max 92",
-        brand: "Nike",
-        price: "$60",
-    },
-    {
-        title: "Adidas Air Max 90",
-        brand: "Adidas",
-        price: "$55",
-    },
-    {
-        title: "Puma Air Max 90",
-        brand: "Puma",
-        price: "$50",
-    },
-    {
-        title: "Nike Air Max 93",
-        brand: "Nike",
-        price: "$53",
-    },
-    {
-        title: "Nike Air Max 94",
-        brand: "Nike",
-        price: "$24",
-    },
-    {
-        title: "Nike Air Max 94",
-        brand: "Nike",
-        price: "$15",
-    },
-];
+
 
 const ShoopingCards = (props) => {
     return (
@@ -54,6 +18,18 @@ const ShoopingCards = (props) => {
                 padding: convertWidth(8),
                 borderColor: "#d3d3d3",
                 borderWidth: convertWidth(1),
+                width: convertWidth(170),
+                margin: convertWidth(12),
+                shadowColor: "#000",
+                shadowOffset: {
+                    width: 0,
+                    height: 1,
+                },
+                shadowOpacity: 0.18,
+                shadowRadius: 1.00,
+
+                elevation: 1,
+
             }}
         >
             <Image
@@ -73,7 +49,7 @@ const ShoopingCards = (props) => {
                     fontWeight: "700",
                 }}
             >
-                {items[2].title}
+                {props.title}
             </Text>
             <Text
                 style={{
@@ -83,7 +59,7 @@ const ShoopingCards = (props) => {
                     color: "grey",
                 }}
             >
-                {items[3].brand}
+                {props.brand}
             </Text>
             <Text
                 style={{
@@ -93,7 +69,7 @@ const ShoopingCards = (props) => {
                     fontWeight: "bold",
                 }}
             >
-                {items[0].price}
+                {props.price}
             </Text>
             <TouchableOpacity
                 style={{
