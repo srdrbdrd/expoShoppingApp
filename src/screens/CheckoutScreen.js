@@ -41,7 +41,7 @@ const CheckoutScreen = (props) => {
                     checkout
                     text="Proceed to checkout"
                     price={"Total:" + totalUSD + "$"}
-                    onPress={() => props.navigation.navigate("CheckoutScreen")}
+                    onPress={() => props.navigation.navigate("SingInScreen")}
                 />
             )}
         </View>
@@ -50,43 +50,3 @@ const CheckoutScreen = (props) => {
 
 export default CheckoutScreen;
 
-const styles = StyleSheet.create({});
-
-const mockItems = [
-    {
-        id: "1",
-        title: "Nike Air Max 90",
-        brand: "Nike",
-        price: 70,
-    },
-    {
-        id: "2",
-        title: "Nike Air Max 92",
-        brand: "Nike",
-        price: 60,
-    },
-    {
-        id: "3",
-        title: "Adidas Air Max 90",
-        brand: "Adidas",
-        price: 55,
-    },
-    {
-        id: "4",
-        title: "Puma Air Max 90",
-        brand: "Puma",
-        price: 50,
-    },
-    {
-        id: "5",
-        title: "Nike Air Max 93",
-        brand: "Nike",
-        price: 53,
-    },
-    {
-        id: "6",
-        title: "Nike Air Max 94",
-        brand: "Nike",
-        price: 24,
-    },
-];

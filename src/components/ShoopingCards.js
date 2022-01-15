@@ -91,4 +91,4 @@ const ShoopingCards = (props) => {
 
 export default ShoopingCards;
 
-const styles = StyleSheet.create({});
+

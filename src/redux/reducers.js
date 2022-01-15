@@ -1,4 +1,4 @@
-import { ADD_ITEM, REMOVE_ITEM } from "./actions";
+import { ADD_ITEM, REMOVE_ITEM, CHECKOUT } from "./actions";
 
 const initialState = {
     items: [],
@@ -22,6 +22,9 @@ function userReducer(state = initialState, action) {
             ),];
             console.log(newState);
             return newState;
+
+        case CHECKOUT:
+            return initialState;
 
         default:
             return state;

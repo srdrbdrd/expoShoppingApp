@@ -86,4 +86,4 @@ const CheckoutItems = (props) => {
 
 export default CheckoutItems;
 
-const styles = StyleSheet.create({});
+
