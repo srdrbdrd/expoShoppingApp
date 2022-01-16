@@ -41,7 +41,7 @@ const PaymentPage = (props) => {
                 <View style={{
                     flex: 1, justifyContent: 'center',
                     alignItems: 'center',
-                    backgroundColor: 'rgba(192,192,192,0.7)',
+
 
                 }}>
                     <View style={{
