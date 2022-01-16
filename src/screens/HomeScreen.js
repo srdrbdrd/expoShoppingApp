@@ -19,7 +19,7 @@ const HomeScreen = (props) => {
             <ShoopingCards
                 title={item.title}
                 brand={item.brand}
-                price={item.price}
+                price={item.price + '$'}
                 onPress={() => dispatch(addItem(item))}
             />
         );
